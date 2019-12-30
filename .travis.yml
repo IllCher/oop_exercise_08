@@ -14,7 +14,8 @@ install:
   - sudo apt-get install make
 
 script: 
-  - cd cmake-build-debug/
-  - make
-  - ./oop_exercise_08 1
-  - ext
+  - export CC=gcc-7
+  - export CXX=g++-7
+  - cmake --version
+  - cmake CMakeLists.txt
+  - cmake  --build . --target neat
