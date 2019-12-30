@@ -17,7 +17,6 @@ struct subscriber {
     std::mutex mtx;
     std::condition_variable cond_var;
     bool stop = false;
-
 };
 
 #endif

@@ -8,7 +8,6 @@ void stream_processor::process(std::shared_ptr<std::vector<std::shared_ptr<figur
 
 void file_processor::process(std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer) {
     std::ofstream fout;
-    //std::cout << std::to_string(('a' + 1) + '0');
     fout.open(str_from_number(cnt) + ".txt");
     cnt++;
     if (!fout.is_open()) {

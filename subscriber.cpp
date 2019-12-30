@@ -1,7 +1,7 @@
 #include "subscriber.h"
 
 void subscriber::operator()() {
-    while(true) {
+    for(;;) {
         std::unique_lock<std::mutex>lock(mtx);
         cond_var.wait(lock,[&]{ return (buffer != nullptr || stop);});
         if (stop) {
