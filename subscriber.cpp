@@ -7,7 +7,7 @@ void subscriber::operator()() {
         if (stop) {
             break;
         }
-        for (const auto& elem: processors) {
+        for (auto elem: processors) {
             elem->process(buffer);
         }
         buffer = nullptr;

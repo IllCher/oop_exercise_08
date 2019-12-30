@@ -10,7 +10,7 @@
 
 struct processor {
     virtual void process(std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer) = 0;
-
+    virtual std::string str_from_number(int number);
 };
 
 struct stream_processor : processor {
@@ -20,6 +20,6 @@ struct stream_processor : processor {
 struct file_processor : processor {
     void process(std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer) override;
 private:
-    int counter = 0;
+    int cnt = 0;
 };
 #endif

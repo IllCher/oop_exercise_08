@@ -1,6 +1,5 @@
-
-#ifndef OOP_EXERCISE_03_POINT_H
-#define OOP_EXERCISE_03_POINT_H
+#ifndef OOP_EXERCISE_08_POINT_H
+#define OOP_EXERCISE_08_POINT_H
 #include <iostream>
 struct point {
     double x,y;
