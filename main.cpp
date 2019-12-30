@@ -4,9 +4,6 @@
 #include <thread>
 #include "factory.h"
 #include "figure.h"
-#include "quadrate.h"
-#include "octagon.h"
-#include "triangle.h"
 #include "subscriber.h"
 int main(int argc,char* argv[]) {
     if (argc != 2) {
