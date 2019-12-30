@@ -8,7 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/oop_exercise_08.dir/factory.cpp.o"
   "CMakeFiles/oop_exercise_08.dir/processor.cpp.o"
   "CMakeFiles/oop_exercise_08.dir/subscriber.cpp.o"
-  "CMakeFiles/oop_exercise_08.dir/test/test.cpp.o"
   "oop_exercise_08.pdb"
   "oop_exercise_08"
 )
