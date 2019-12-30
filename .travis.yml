@@ -24,5 +24,4 @@ before_script:
   - cmake ..
 script: 
   - make
-  - ./oop_exercise_08 1
-  - ext
+  - ./oop_exercise_08 1 < test
