@@ -3,7 +3,6 @@
 #include <iostream>
 struct point {
     double x,y;
-    point (double x1, double x2) : x{x1}, y{x1}{}
 };
 point operator+ (point lhs, point rhs);
 point operator- (point lhs, point rhs);
