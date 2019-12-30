@@ -13,5 +13,7 @@ install:
 
 script: 
   - cd cmake-build-debug/
+  - ls
   - make
   - ./oop_exercise_08 1
+  - ext
