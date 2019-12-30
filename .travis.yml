@@ -10,7 +10,6 @@ before_install:
 install: 
   - sudo apt-get install -qq g++-6
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
-  - sudo apt-get install build-essential
   - sudo apt-get update
   - sudo apt-get install make
 
