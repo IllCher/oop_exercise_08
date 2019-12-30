@@ -10,7 +10,6 @@
 
 struct processor {
     virtual void process(std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer) = 0;
-    virtual std::string str_from_number(int number);
 };
 
 struct stream_processor : processor {

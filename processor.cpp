@@ -8,7 +8,7 @@ void stream_processor::process(std::shared_ptr<std::vector<std::shared_ptr<figur
 
 void file_processor::process(std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer) {
     std::ofstream fout;
-    fout.open(str_from_number(cnt) + ".txt");
+    fout.open(std::to_string(cnt) + ".txt");
     cnt++;
     if (!fout.is_open()) {
         std::cout << "can't open\n";
@@ -20,13 +20,3 @@ void file_processor::process(std::shared_ptr<std::vector<std::shared_ptr<figure>
 
 }
 
-std::string processor::str_from_number(int number) {
-    std::string ans;
-    int tmp = number;
-    do {
-        int d = tmp % 10;
-        ans += 'a';
-        tmp /= 10;
-    } while (tmp != 0);
-    return ans;
-}
