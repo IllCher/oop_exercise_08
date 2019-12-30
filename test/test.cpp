@@ -32,21 +32,6 @@ BOOST_AUTO_TEST_CASE(quadrate) {
         }
 }
 
-BOOST_AUTO_TEST_CASE(console_processor) {
-        std::stringstream buffer;
-        std::streambuf * old = std::cout.rdbuf(buffer.rdbuf());
-        std::vector<std::shared_ptr<Figure>> v;
-        v.push_back(std::make_shared<Pentagon>(point{1,2},point{3,4},point{5,6},point{7,8},point{9,10}));
-        v.push_back(std::make_shared<quadrate>(point{0,0}, point{3, 4}, point{8, 4}, point{5,0}));
-        v.push_back(std::make_shared<octagon>(point{0,0}, point{0, 4}, point{4, 4}, point{6,0}));
-        ConsoleProcessor proc;
-        proc.Process(v);
-        std::string output = "Pentagon, p1: 1 2, p2: 3 4, p3: 5 6, p4: 7 8, p5: 9 10\n"
-        "quadrate, p1: 0 0, p2: 3 4, p3: 8 4, p4: 5 0\n"
-        "octagon, p1: 0 0, p2: 4 4, p3: 0 4, p4: 6 0\n";
-        BOOST_CHECK_EQUAL(output, buffer.str());
-        std::cout.rdbuf(old);
-}
 
 BOOST_AUTO_TEST_SUITE_END()
 
