@@ -3,8 +3,8 @@
 void subscriber::operator()() {
     while(true) {
         std::unique_lock<std::mutex>lock(mtx);
-        cond_var.wait(lock,[&]{ return (buffer != nullptr || end);});
-        if (end) {
+        cond_var.wait(lock,[&]{ return (buffer != nullptr || stop);});
+        if (stop) {
             break;
         }
         for (const auto& processor_elem: processors) {

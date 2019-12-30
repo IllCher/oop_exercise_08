@@ -19,3 +19,5 @@ std::ostream &operator<< (std::ostream &os, const point &p ) {
     os << p.x << " " << p.y << std::endl;
     return os;
 }
+
+

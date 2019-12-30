@@ -78,7 +78,7 @@ int main(int argc,char* argv[]) {
             std::cout << "no such a command\n";
         }
     }
-    sub.end = true;
+    sub.stop = true;
     sub.cond_var.notify_all();
     sub_thread.join();
     return 0;

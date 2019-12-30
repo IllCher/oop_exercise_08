@@ -16,8 +16,8 @@ struct subscriber {
     std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer;
     std::mutex mtx;
     std::condition_variable cond_var;
-    bool end = false;
+    bool stop = false;
 
 };
 
-#endif //OOP_EXERCISE_08_SUBSCRIBER_H
+#endif
