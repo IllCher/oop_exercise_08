@@ -5,6 +5,7 @@ dist: trusty
 before_install:
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
+  
 
 install: 
   - sudo apt-get install -qq g++-6
@@ -13,9 +14,15 @@ install:
   - sudo apt-get update
   - sudo apt-get install make
 
+before_script:
+  # create a build folder for the out-of-source build
+  - mkdir build
+  # switch to build directory
+  - cd build
+  # run cmake; here we assume that the project's
+  # top-level CMakeLists.txt is located at '..'
+  - cmake ..
 script: 
-  - export CC=gcc-7
-  - export CXX=g++-7
-  - cmake --version
-  - cmake CMakeLists.txt
-  - cmake  --build . --target neat
+  - make
+  - ./oop_exercise_08 1
+  - ext
