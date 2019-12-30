@@ -11,6 +11,6 @@ install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
 
 script: 
-  - cd cmake-build-debug
+  - cd cmake-build-debug/
   - make
   - ./oop_exercise_08 1
