@@ -34,6 +34,7 @@ int main(int argc,char* argv[]) {
                 continue;
             }
             if (buffer->size() == buffer_size) {
+                std::cout << "Buffer!\n";
                 sub.buffer = buffer;
                 sub.cond_var.notify_all();
                 sub.cond_var.wait(locker, [&](){ return sub.buffer == nullptr;});

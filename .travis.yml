@@ -19,8 +19,5 @@ before_script:
   - cmake ..
 script: 
   - make
-  - touch test
-  - echo -e "+ q 0 0 0 0\n ext\n" > test
-  - ./oop_exercise_08 1 < test
-  - rm -r test
+  - ./oop_exercise_08 3 < ../tests/test_00.test
   
