@@ -4,43 +4,11 @@
 #include <thread>
 #include "factory.h"
 #include "figure.h"
-#include "octagon.h"
-#include "quadrate.h"
-#include "triangle.h"
 #include "subscriber.h"
-/*int for_test(int cnt, int size) {
-    std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer = std::make_shared<std::vector<std::shared_ptr<figure>>>();
-    buffer->reserve(size);
-    int tmp = size;
-    int fig = 0;
-    while (cnt != 0) {
-        if (tmp == 0) {
-            tmp = size;
-            cnt--;
-        }
-        if (fig == 0) {
-            std::shared_ptr<figure> cur = std::shared_ptr<figure>( new  octagon(point(rand(), rand()), point(rand(), rand()),
-                                                point(rand(), rand()), point(rand(), rand()),
-                                                point(rand(), rand()), point(rand(), rand()),
-                                                point(rand(), rand()),
-                                                point(rand(), rand())));
-            buffer->push_back(cur);
-            fig++;
-        } else if (fig == 1) {
-            std::shared_ptr<figure> cur = std::shared_ptr<figure>( new  quadrate(point(rand(), rand()), point(rand(), rand())));
-            buffer->push_back(cur);
-            fig++;
-        } else if (fig == 2) {
-            std::shared_ptr<figure> cur = std::shared_ptr<figure>( new  triangle(point(2, 0), point(0, 4), point(-3, 0)));
-            buffer->push_back(cur);
-            fig = 0;
-        } else {
-            std::cout << "How?\n";
-        }
-        tmp--;
-    }
+int check(int cnt) {
+
     return 0;
-}*/
+}
 int main(int argc,char* argv[]) {
     if (argc != 2) {
         std::cout << "not enough arguments\n";

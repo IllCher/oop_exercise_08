@@ -11,4 +11,4 @@ struct factory {
     std::shared_ptr<figure> new_figure(std::istream& is);
 };
 
-#endif //OOP_EXERCISE_08_FACTORY_H
+#endif
