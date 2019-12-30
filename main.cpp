@@ -37,7 +37,7 @@ int main(int argc,char* argv[]) {
             if (buffer->size() == buffer_size) {
                 sub.buffer = buffer;
                 sub.cond_var.notify_all();
-                sub.cond_var.wait(locker);
+                sub.cond_var.wait(locker, [&](){ return sub.buffer == nullptr;});
                 buffer->clear();
             }
         } else if (cmd == "ext")  {
