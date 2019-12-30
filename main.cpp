@@ -14,6 +14,7 @@ int main(int argc,char* argv[]) {
         std::cout << "not enough arguments\n";
         return 1;
     }
+    int b;
     int  buffer_size = std::stoi(argv[1]);
     std::shared_ptr<std::vector<std::shared_ptr<figure>>> buffer = std::make_shared<std::vector<std::shared_ptr<figure>>>();
     buffer->reserve(buffer_size);
