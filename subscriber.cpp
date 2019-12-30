@@ -7,8 +7,8 @@ void subscriber::operator()() {
         if (stop) {
             break;
         }
-        for (const auto& processor_elem: processors) {
-            processor_elem->process(buffer);
+        for (const auto& elem: processors) {
+            elem->process(buffer);
         }
         buffer = nullptr;
         cond_var.notify_all();

@@ -21,7 +21,7 @@ before_script:
 script: 
   - make
   - touch test
-  - echo + q 0 0 0 0 > test
+  - echo -e "+ q 0 0 0 0\n ext\n" > test
   - ./oop_exercise_08 1 < test
   - rm -r test
   
