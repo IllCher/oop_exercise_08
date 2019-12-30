@@ -16,9 +16,12 @@ CMakeFiles/oop_exercise_08.dir/figure.cpp.o: ../point.h
 CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../factory.h
 CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../figure.h
 CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../main.cpp
+CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../octagon.h
 CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../point.h
 CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../processor.h
+CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../quadrate.h
 CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../subscriber.h
+CMakeFiles/oop_exercise_08.dir/main.cpp.o: ../triangle.h
 
 CMakeFiles/oop_exercise_08.dir/octagon.cpp.o: ../figure.h
 CMakeFiles/oop_exercise_08.dir/octagon.cpp.o: ../octagon.cpp

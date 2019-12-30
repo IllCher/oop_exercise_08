@@ -15,13 +15,13 @@ install:
   - sudo apt-get install make
 
 before_script:
-  # create a build folder for the out-of-source build
   - mkdir build
-  # switch to build directory
   - cd build
-  # run cmake; here we assume that the project's
-  # top-level CMakeLists.txt is located at '..'
   - cmake ..
 script: 
   - make
+  - touch test
+  - echo ext > test
   - ./oop_exercise_08 1 < test
+  - rm -r test
+  
